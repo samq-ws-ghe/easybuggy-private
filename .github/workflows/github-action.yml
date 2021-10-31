@@ -6,6 +6,9 @@ on:
 
 jobs:
   build:
+    env:
+      JFROG_USER: ${{secrets.JFROG_USER}}
+      JFROG_PASS: ${{secrets.JFROG_PASS}}
 
     runs-on: ubuntu-latest
 
@@ -17,7 +20,7 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
         server-id: snapshots
-        server-username: ${{secrets.JFROG_USER}}
-        server-password: ${{secrets.JFROG_PASS}}
+        server-username: JFROG_USER
+        server-password: JFROG_PASS
     - name: Build with Maven
       run: mvn clean install
