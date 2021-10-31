@@ -30,7 +30,7 @@
 		<profile>
 			<id>artifactory</id>
 			<activation>
-				<activationByDefault>true</activationByDefault>
+				<activeByDefault>true</activeByDefault>
 			</activation>
 			<repositories
 				<repository>
