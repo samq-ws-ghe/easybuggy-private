@@ -32,7 +32,7 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
-			<repositories
+			<repositories>
 				<repository>
 					<snapshots />
 					<id>snapshots</id>
